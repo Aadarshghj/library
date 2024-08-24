@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+*{
+
+    margin:0;
+    padding: 0;
+}
+
+.navbar{
+    animation:fadeInNavbar 2s ease-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInNavbar {
+    from{
+        opacity:0;
+        transform: translateY(-100%);
+
+    }
+
+    to{
+        opacity:1;
+        transform: translateY(-0);
+
+
+    }
+    
+}
+.navbar-custom {
+    box-shadow: 0 0 10px #089da1;
+}
+.navbar-logo { 
+    height: 100px; /* Adjust this height to fit your navbar */
+    width: auto;  /* Maintain aspect ratio */
+    max-height: 100%; /* Ensure logo doesn't overflow the navbar */
+}
+
+.custom-nav-center {
+    display: flex;
+    justify-content: center; /* Center align items horizontally */
+    flex-grow: 1; /* Allow the ul to grow and center in the available space */
+}
+
+.navbarSupportedContent{
+    display: flex;
+            justify-content: center; /* Center align items horizontally */
+            flex-grow: 1;
+}
+
+
+/* CAROUSAL */
+
+.c-item {
+    height: 400px;
+    position: relative;
+    overflow: hidden; 
+}
+
+.c-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+
+
+#carouselExample{ 
+
+    margin-top: .5em;
+    width: 100%;
+
+}
+
+
+.carousel-caption {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+
+}
+
+
+.carousel-caption h5 {
+    font-size: 2em;
+    margin-bottom: 1rem;
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+      color:darkgray
+
+    
+}
+
+.carousel-caption .btn {
+    margin-top: 0.5rem;
+}
+
+
+.para{ 
+    margin-top: 1em
+
+}
+
+/* hero */
+.popular h2{
+margin-top: 30px;
+text-align: center;
+font-size: 1.5rem;
+
+}
+
+.para1 section{
+
+    font-size: small;
+    text-align: center;
+    color:grey;
+    margin-bottom: 10px;
+}
+
+.books{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    flex-wrap:wrap;
+    gap:16px;
+    margin-left: 1.5em;
+    margin-bottom: 5em;
+   
+
+
+}
+
+.bimg img{
+    max-width: 200px;
+    object-fit: cover;
+    height: 300px;
+    border-radius: 10px;
+    cursor:grabbing;
+    border: 1px solid #333; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    gap: 15px;
+    
+
+
+}
+
+
+.description {
+    display: flex;
+    align-items: center;
+    border: 1px solid #d3d3d3; 
+  }
+  .image {
+    flex: 0 0 auto;
+  }
+  .content {
+    flex: 1;
+    padding-left: 20px; /* Adjust spacing between image and content */
+  }
+  .content h2{
+    font-size:medium;
+    text-align: center;
+    color:rgb(16, 15, 15);
+    margin-bottom: 10px;
+    
+
+  }
+
+
+
+
+
+
+
+
+/*Responsiveness */
+@media (max-width: 768px) {
+    .carousel-caption h5 {
+        font-size: 1.5rem; /* Smaller text on medium screens */
+        margin-top:auto;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem; /* Smaller text on medium screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h5 {
+        font-size: 1.25rem; /* Smaller text on small screens */
+    }
+
+    .carousel-caption p {
+        font-size: 0.875rem; /* Smaller text on small screens */
+    }
+
+    .carousel-caption .btn {
+        font-size: 0.875rem; /* Smaller button text */
+    }
+}

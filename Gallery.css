@@ -1,0 +1,90 @@
+body.cover1 {
+    background-image: url(/bookimages/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; 
+    margin: 0;
+    padding: 0;
+}
+
+.heading{
+    animation:fadeInNavbar 2s ease-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInNavbar {
+    from{
+        opacity:0;
+        transform: translateY(-100%);
+
+    }
+
+    to{
+        opacity:1;
+        transform: translateY(-0);
+
+
+    }
+    
+}
+
+.heading h2 { 
+    text-align: center;
+    font-family: 'Merriweather', serif; 
+font-size: 3rem; 
+color: #e9f4fe; 
+text-align: center; 
+margin-top: 0; 
+margin-bottom: 0.1rem; 
+padding: 0 1rem; 
+line-height: 1.2; 
+text-transform: uppercase; 
+letter-spacing: 0.05em;
+border-bottom: 1px solid #e74c3c; 
+box-shadow: 0 0 10px #089da1;
+
+  }
+
+.heading h2{
+    text-align: center;
+}
+.trending{
+display:flex;
+flex-direction:row;
+align-items: center;
+flex-wrap:wrap;
+gap:16px;
+margin-left: 1.5em;
+
+
+}
+
+.trending img{
+         
+    max-width: 200px;
+    object-fit: cover;
+    height: 300px;
+    border-radius: 10px;
+    cursor:grabbing;
+    border: 1px solid #333; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    
+
+}
+
+section h1{
+    margin-left: 1em;
+   
+}
+
+h2{
+color: white;
+
+}
+
+.trend  {
+text-decoration: none;
+color: red;
+}

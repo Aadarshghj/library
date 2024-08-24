@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book1</title>
+
+    <style>
+        
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+.heading{
+    animation:fadeInNavbar 2s ease-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInNavbar {
+    from{
+        opacity:0;
+        transform: translateY(-100%);
+
+    }
+
+    to{
+        opacity:1;
+        transform: translateY(-0);
+
+
+    }
+    
+}
+
+
+
+.heading h1 { 
+        text-align: center;
+        font-family: 'Merriweather', serif; 
+  font-size: 3rem; 
+  color: #2c3e50; 
+  text-align: center; 
+  margin-top: 0; 
+   margin-bottom: 0.1rem; 
+  padding: 0 1rem; 
+  line-height: 1.2; 
+  text-transform: uppercase; 
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #e74c3c; 
+  box-shadow: 0 0 10px #089da1;
+
+      }
+
+
+
+.heading h1 { 
+        text-align: center;
+      }
+
+      .description {
+    display: flex;
+    align-items: center;
+    border: 1px solid #d3d3d3; 
+  }
+
+  .image {
+    flex: 0 0 auto;
+  }
+  .content {
+    flex: 1;
+    padding-left: 20px; /* Adjust spacing between image and content */
+  }
+  .content h2{
+    font-size:medium;
+    text-align: center;
+    color:rgb(16, 15, 15);
+    margin-bottom: 10px;
+    
+
+  }
+  @media (max-width: 768px) {
+    .description {
+        flex-direction: column; 
+        text-align: center; 
+    }
+}
+    
+    .content {
+        padding: 10px; 
+    
+    .content h2 {
+        font-size: 1.25rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .heading h1 {
+        font-size: 1.5rem; 
+    }
+    
+    .content {
+        padding: 5px; 
+    }
+    
+    .content h2 {
+        font-size: 1rem; 
+    }
+}
+
+    </style>
+</head>
+<body>
+    <main class="container-fluid">
+        <div class="heading">
+            <h1>Legends of  the Provice-House </h1>
+        </div>
+                          
+<div class="description">
+    <div class="image">
+     
+        <img src="bookimages\1761196-M.jpg" alt="Book Image">
+    </div>
+    <div class="content">
+       
+        
+        <p>Author: Nathaniel Hawthorne</p>
+       
+        <p>★★★☆☆</p> 
+        <p>
+     Legends of Province invites readers into a world where myth and reality intertwine. Set in the picturesque yet mysterious province of Eldoria, this captivating novel unravels the rich tapestry of local legends that have shaped its people and landscapes. From ancient curses to heroic quests, each chapter delves into a different legend, revealing the secrets and supernatural forces that have influenced the lives of the province's inhabitants. With vibrant storytelling and enchanting characters, Legends of Province offers a spellbinding journey through the heart of folklore and the enduring power of storytelling.</p>
+      
+      
+     <a href="Bookgallery.html">Similar Genre</a> 
+    </div>
+  </div>
+    
+      
+
+
+
+
+    </main>
+    
+</body>
+</html>

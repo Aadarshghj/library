@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book1</title>
+
+    <style>
+        
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+.heading{
+    animation:fadeInNavbar 2s ease-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInNavbar {
+    from{
+        opacity:0;
+        transform: translateY(-100%);
+
+    }
+
+    to{
+        opacity:1;
+        transform: translateY(-0);
+
+
+    }
+    
+}
+
+
+
+.heading h1 { 
+        text-align: center;
+        font-family: 'Merriweather', serif; 
+  font-size: 3rem; 
+  color: #2c3e50; 
+  text-align: center; 
+  margin-top: 0; 
+   margin-bottom: 0.1rem; 
+  padding: 0 1rem; 
+  line-height: 1.2; 
+  text-transform: uppercase; 
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #e74c3c; 
+  box-shadow: 0 0 10px #089da1;
+
+      }      
+
+.heading h1 { 
+        text-align: center;
+      }
+
+      .description {
+    display: flex;
+    align-items: center;
+    border: 1px solid #d3d3d3; 
+  }
+
+  .image {
+    flex: 0 0 auto;
+  }
+  .content {
+    flex: 1;
+    padding-left: 20px; /* Adjust spacing between image and content */
+  }
+  .content h2{
+    font-size:medium;
+    text-align: center;
+    color:rgb(16, 15, 15);
+    margin-bottom: 10px;
+    
+
+  }
+  @media (max-width: 768px) {
+    .description {
+        flex-direction: column; 
+        text-align: center; 
+    }
+}
+    
+    .content {
+        padding: 10px; 
+    
+    .content h2 {
+        font-size: 1.25rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .heading h1 {
+        font-size: 1.5rem; 
+    }
+    
+    .content {
+        padding: 5px; 
+    }
+    
+    .content h2 {
+        font-size: 1rem; 
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <main class="container-fluid">
+        <div class="heading">
+            <h1>Treny - Laments</h1>
+        </div>
+                          
+<div class="description">
+    <div class="image">
+     
+        <img src="bookimages\4847984-M.jpg" alt="Book Image">
+    </div>
+    <div class="content">
+       
+        
+        <p>Author:Kochanowski</p>
+       
+        <p>★★★☆☆</p> 
+        <p>Jan Kochanowski (1530-84) was the greatest Polish poet of his time and probably the most famous name in Polish literature before Adam Mickiewicz (1798 - 1855). His masterpiece is considered to be his Laments, a series of nineteen poems commemorating his daughter Ursula, who died in 1579 at the age of two and a half . In simple but eloquent language, Kochanowski describes his journey from savage grief to reconciliation, and even in translation his verse retains much of its power and conviction.
+            In this bilingual presentation each poem will be read first in the original Polish and then in English translation.</p>
+      
+      
+            <a href="Bookgallery.html">Similar Genre</a> 
+    </div>
+  </div>
+    
+      
+
+
+
+
+    </main>
+    
+</body>
+</html>
